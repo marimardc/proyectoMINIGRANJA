@@ -1,0 +1,48 @@
+.root {
+	    -fx-background-image: url("file:/C:/Users/rodri/eclipse-workspace/GRANJAFX/src/vista/fondo.jpg");
+	    -fx-background-repeat: no-repeat;
+	    -fx-background-position: center center;
+	    -fx-background-size: 100% 100%;
+	}
+
+	.rootTienda {
+	    -fx-background-image: url("file:/C:/Users/rodri/eclipse-workspace/GRANJAFX/src/vista/tienda.jpg");
+	    -fx-background-repeat: no-repeat;
+	    -fx-background-position: center center;
+	    -fx-background-size: 100% 100%;
+	}
+
+	.label {
+	    -fx-font-family: "Comic Sans MS", "Arial";
+	    -fx-font-size: 22px;
+	    -fx-font-weight: bold;
+	    -fx-text-fill: #3c763d; /* Verde amigable */
+	    -fx-effect: dropshadow(one-pass-box, rgba(0,0,0,0.2), 2, 0, 0, 1);
+	    -fx-text-transform: none;
+	    -fx-padding: 5px 10px;
+	    -fx-background-radius: 10px;
+		-fx-background-color: transparent;
+		-fx-border-color: transparent;
+	}
+
+	.button {
+	    -fx-font-family: "Comic Sans MS", "Arial";
+	    -fx-font-size: 20px;
+	    -fx-font-weight: bold;
+	    -fx-text-fill: white;
+	    -fx-background-color: linear-gradient(#f9d423, #ff4e50); /* De amarillo a rojo anaranjado */
+	    -fx-background-radius: 20px;
+	    -fx-border-radius: 20px;
+	    -fx-padding: 10px 20px;
+	    -fx-cursor: hand;
+	    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 4, 0, 0, 1);
+	    -fx-border-color: #ffa500;
+	    -fx-border-width: 2px;
+	}
+
+	.button:hover {
+	    -fx-background-color: linear-gradient(#ff4e50, #f9d423);
+	    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 6, 0, 0, 2);
+	    -fx-scale-x: 1.05;
+	    -fx-scale-y: 1.05;
+	}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="535.0" prefWidth="640.0" styleClass="rootTienda" stylesheets="@estilos.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorTienda">
+    <Label fx:id="lecheLabel" layoutX="100" layoutY="50" text="Leche: 0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+    <Label fx:id="monedasLabel" layoutX="100" layoutY="100" text="Monedas: 0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="40.0" />
+    <Label fx:id="alimentoLabel" layoutX="100" layoutY="150" text="Comida: 0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="70.0" />
+    
+    <Button fx:id="cambiarLechePorMonedas" layoutX="100" layoutY="200" onAction="#cambiarLechePorMonedas" text="Cambiar 1 Leche por 10 Monedas" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+    <Button fx:id="cambiarMonedaPorAlimento" layoutX="100" layoutY="250" onAction="#cambiarMonedaPorAlimento" text="Cambiar 1 Moneda por 10 de Alimento" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="65.0" />
+</AnchorPane>

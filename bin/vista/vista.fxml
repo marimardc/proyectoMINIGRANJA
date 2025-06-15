@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="538.0" prefWidth="632.0" style="-fx-background-image: file:/C:/Users/rodri/eclipse-workspace/GRANJAFX/vista/fondo.jpg;" styleClass="root" stylesheets="@estilos.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorGranja">
+    <Button fx:id="alimentarButton" onAction="#alimentarVaca" prefHeight="18.0" text="Alimentar Vaca" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="340.0" />
+    <ProgressBar fx:id="barraAlimento" prefHeight="30.0" prefWidth="40.0" progress="0.0" style="-fx-accent: #3598db;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="550.0" AnchorPane.rightAnchor="10.0">
+      <effect>
+         <ColorAdjust />
+      </effect></ProgressBar>
+    <Button fx:id="recolectarButton" onAction="#recolectarLeche" prefHeight="18.0" text="Recolectar Leche" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="340.0" />
+    <Label fx:id="mensajeLabel" layoutX="203.0" layoutY="208.0" prefHeight="80.0" prefWidth="372.0" wrapText="true" visible="false"/>
+    <Button fx:id="reiniciarButton" text="Reiniciar Partida" onAction="#reiniciarPartida" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="120.0"
+        layoutX="100" layoutY="10"/>
+    <Button fx:id="botonMusica" onAction="#toggleMusica" text="🔊" AnchorPane.leftAnchor="10.0" AnchorPane.bottomAnchor="10.0"/>
+    <Button fx:id="tiendaButton" layoutX="272.0" layoutY="12.0" onAction="#abrirTienda" prefHeight="100.0" prefWidth="200.0" text="Tienda" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+    <Label fx:id="leche" layoutX="203.0" layoutY="101.0" text="Leche: 0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+    <Label fx:id="comida" layoutX="203.0" layoutY="118.0" text="Comida: 0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="40.0" />
+    <Label fx:id="monedas" layoutX="210.0" layoutY="135.0" text="Monedas: 0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="70.0" />
+</AnchorPane>
